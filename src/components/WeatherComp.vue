@@ -50,7 +50,7 @@ export default {
                 return
             }
             try{
-                const url = `http://api.weatherapi.com/v1/forecast.json?key=${api}&q=${this.city}&days=1&aqi=no&alerts=no`
+                const url = `https://api.weatherapi.com/v1/forecast.json?key=${api}&q=${this.city}&days=1&aqi=no&alerts=no`
                 axios
                 .get(url)
                 .then(response => {
